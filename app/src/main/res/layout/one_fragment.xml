@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.chanven.lib.cptr.PtrClassicFrameLayout
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/id_ptr_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="700"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.8">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_h2" />
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+
+    <com.beabow.clickme.view.BigPatternBgRelaLayout
+        android:id="@+id/id_rl_hide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/iv_big_bg"
+        android:clipChildren="false">
+
+        <TextView
+            android:id="@+id/id_tv_currCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeA1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id_tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:layout_toRightOf="@id/id_tv_currCount"
+            android:padding="5dp"
+            android:text="/10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeA3"
+            android:textStyle="bold" />
+
+        <com.beabow.clickme.view.BigPatternViewPager
+            android:id="@+id/id_viewpager"
+            android:layout_width="250dp"
+            android:clipChildren="false"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_tv_currCount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+           />
+    </com.beabow.clickme.view.BigPatternBgRelaLayout>
+</FrameLayout>

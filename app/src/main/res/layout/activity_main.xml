@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/iv_setting" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/id_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/color_h1"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/color_h1"
+            app:tabTextColor="@color/white" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="#999999" />
+
+        <ImageView
+            android:id="@+id/iv_pattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/iv_pattern" />
+    </LinearLayout>
+
+   <!-- <com.beabow.clickme.view.MainViewPager-->
+    <android.support.v4.view.ViewPager
+        android:background="@color/black"
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

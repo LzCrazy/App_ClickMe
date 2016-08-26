@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context="com.beabow.clickme.activity.UpdatePwActivity">
+
+    <RelativeLayout
+        android:id="@+id/id_rl_back"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/id_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@mipmap/iv_back"
+            android:drawablePadding="10dp"
+            android:onClick="onBackClose"
+            android:padding="10dp"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeA3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改密码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeA2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_h2">
+
+        <EditText
+            android:id="@+id/id_et_originalPw"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:hint="旧密码"
+            android:inputType="textPassword"
+            android:textColorHint="@color/color_h3"
+            android:textColor="@color/color_h3"
+            android:textSize="@dimen/textSizeA3" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_h2">
+
+        <EditText
+            android:id="@+id/id_et_newPw"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:hint="新密码"
+            android:inputType="textPassword"
+            android:textColor="@color/color_h3"
+            android:textColorHint="@color/color_h3"
+            android:textSize="@dimen/textSizeA3" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/color_h2">
+
+        <EditText
+            android:id="@+id/id_et_confimPw"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:hint="确认新密码"
+            android:inputType="textPassword"
+            android:textColor="@color/color_h3"
+            android:textColorHint="@color/color_h3"
+            android:textSize="@dimen/textSizeA3" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/id_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bt_login_bg"
+        android:text="修改密码"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeA2" />
+</LinearLayout>

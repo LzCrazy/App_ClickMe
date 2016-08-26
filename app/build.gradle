@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.beabow.clickme"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    /*网络图片加载库*/
+    /*和Volley绑定到一起*/
+    /*网络请求库*/
+    /*包含新的设计包包TabLayout SnackBar..*/
+    /*支持3.0以上的FragmentStatePagerAdapter*/
+    /*支持加载更多的RecyclerView的开源库*/
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.bumptech.glide:volley-integration:1.4.0@aar'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.android.support:support-v13:22.2.1'
+    compile 'com.chanven.lib:cptr:1.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.android.support:support-v4:22.2.1'
+}

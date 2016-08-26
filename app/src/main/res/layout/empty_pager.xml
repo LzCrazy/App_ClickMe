@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/iv_empth" />
+
+    <TextView
+        android:id="@+id/id_tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_empty"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="暂时没有空闲的技师"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_tv_msg"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:text="请您先选择其他服务吧"
+        android:textColor="@color/white" />
+</RelativeLayout>

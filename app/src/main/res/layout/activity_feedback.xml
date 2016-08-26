@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context="com.beabow.clickme.activity.UpdatePwActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/id_tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@mipmap/iv_back"
+            android:drawablePadding="10dp"
+            android:onClick="onBackClose"
+            android:padding="10dp"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeA3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="意见反馈"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeA2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <com.beabow.clickme.view.AutoSearchEditText
+            android:id="@+id/id_auto_et"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/color_h2"
+            android:gravity="left"
+            android:hint="请输入您宝贵的建议"
+            android:maxLength="400"
+            android:textColor="@color/color_h4"
+            android:textSize="@dimen/textSizeA2" />
+
+        <TextView
+            android:id="@+id/id_tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="0/400"
+            android:textColor="@color/color_h4"
+            android:textSize="@dimen/textSizeA2" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/id_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bt_login_bg"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeA2" />
+</LinearLayout>
